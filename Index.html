@@ -15,8 +15,37 @@
         </header>
         <form id="survey-form">
             <div>
-                <label>Name</label>
-                <input type="text" placeholder="Enter your name">
+                <label id="name-label">Name</label>
+                <input type="text" name="name" placeholder="Enter your name" required>
+            </div>
+            <div>
+                <label id="email-label">Email</label>
+                <input type="email" name="email" placeholder="Enter your email" required>
+            </div>
+            <div>
+                <label id="number-label">Age (Optional)</label>
+                <input type="number" name="Age"  min="10" max="99" placeholder="age" required>
+            </div>
+            <div>
+                <select name="select" id="dropdown" required>
+                    <option disabled selected value> Select an Option</option>
+                    <option>Option 1</option> 
+                    <option>Option 2</option> 
+                    <option>Option 3</option> 
+                    <option>Option 4</option> 
+                </select>
+            </div>
+            <div>
+                <p>Choose an option</p>
+                <label>
+                    <input type="radio" name="radio" value="Option 1" checked> Option 1
+                </label>
+                <label>
+                    <input type="radio" name="radio" value="Option 2"> Option 2
+                </label>
+                <label>
+                    <input type="radio" name="radio" value="Option 3"> Option 3
+                </label>
             </div>
         </form>
     </div>
