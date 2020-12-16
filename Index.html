@@ -10,24 +10,25 @@
 <body>
     <div id="Container">
         <header>
-            <h1 id="title">FCC Survey Form</h1>
-            <p id="description">Let's make a change!</p>
+            <h1 id="title">Survey Form Example</h1>
+            <p id="description">Survey form example/template by Ghazi 360</p>
         </header>
         <form id="survey-form">
-            <div>
+            <div class="form-section">
                 <label id="name-label">Name</label>
-                <input type="text" name="name" placeholder="Enter your name" required>
+                <input type="text" class="form-input" name="name" placeholder="Enter your name" required>
             </div>
-            <div>
+            <div class="form-section">
                 <label id="email-label">Email</label>
-                <input type="email" name="email" placeholder="Enter your email" required>
+                <input type="email" class="form-input" name="email" placeholder="Enter your email" required>
             </div>
-            <div>
+            <div class="form-section">
                 <label id="number-label">Age<span> (Optional) </span> </label>
-                <input type="number" name="Age"  min="10" max="99" placeholder="age" required>
+                <input type="number" class="form-input" name="Age"  min="10" max="99" placeholder="age" required>
             </div>
-            <div>
-                <select name="select" id="dropdown" required>
+            <div class="form-section">
+                <p>Select an Option</p>
+                <select name="select" id="dropdown" class="form-input" required>
                     <option disabled selected value> Select an Option</option>
                     <option>Option 1</option> 
                     <option>Option 2</option> 
@@ -35,7 +36,7 @@
                     <option>Option 4</option> 
                 </select>
             </div>
-            <div>
+            <div class="form-section">
                 <p>Choose an option</p>
                 <label>
                     <input type="radio" name="radio" value="Option 1" checked> Option 1
@@ -47,7 +48,7 @@
                     <input type="radio" name="radio" value="Option 3"> Option 3
                 </label>
             </div>
-            <div>
+            <div class="form-section">
                 <p>Choose an option <span>(Check all that apply)</span></p>
                 <label>
                     <input type="checkbox" name="box" value="Option 1"> Option 1
@@ -74,11 +75,11 @@
                     <input type="checkbox" name="box" value="Option 8"> Option 8
                 </label>
             </div>
-            <div>
+            <div class="form-section">
                 <p>Want to say something?</p>
                 <textarea id="comment" placeholder="Enter your comment here..."></textarea>
             </div>
-            <div>
+            <div class="form-section">
                 <button id="submit" type="submit">submit</button>
             </div>
 
